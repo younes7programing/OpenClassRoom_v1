@@ -1,0 +1,455 @@
+
+
+
+
+/* Définition des polices personnalisées */
+@font-face
+{
+	font-family: 'BallparkWeiner';
+	src: url('../polices/ballpark.eot');
+	src: url('../polices/ballpark.eot?#iefix') format('embeddedopentype'),
+	url('../polices/ballpark.woff') format('woff'),
+	url('../polices/ballpark.ttf') format('truetype'),
+	url('../polices/ballpark.svg#BallparkWeiner') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'Dayrom';
+	src: url('../polices/dayrom.eot');
+	src: url('../polices/dayrom.eot?#iefix') format('embeddedopentype'),
+	url('../polices/dayrom.woff') format('woff'),
+	url('../polices/dayrom.ttf') format('truetype'),
+	url('../polices/dayrom.svg#Dayrom') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Global setting */
+*
+{
+	box-sizing:border-box;
+	
+}
+body
+{
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	background: url('../img/fond_jaune.png');
+	color: #181818;
+
+}
+.main
+{
+	width: 1200px;
+	margin: auto;
+	
+}
+
+@media all and (max-width: 1024px)
+{
+	.main
+	{
+		width: auto;
+		margin: 9px;
+	}
+}
+
+section h1, footer h2,nav a
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+
+}
+@media all and(max-width: 1024px)
+{
+	section h1, footer h2,nav a
+	{
+		font-size: 0.7em;
+	}
+}
+
+/* Global setting */
+
+/* start header*/
+
+header 
+{
+	/*height: 200px;*/
+	overflow: hidden;
+	background: url('../img/separateur.png') repeat-x bottom;
+	margin: 10px 0;
+}
+header .logo_image
+{
+	float: left;
+	width: 50%;
+	
+}
+header .logo_image img
+{
+	margin: 10px 0 0 10px;
+	padding-bottom: 0
+}
+
+header .logo_image h1
+{
+	font-family: 'BallparkWeiner', serif;
+	font-size: 2.5em;
+	font-weight: normal;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+header .logo_image h2
+{
+	font-family: Dayrom, serif;
+	font-size: 1.1em;
+	margin-top: 0px;
+	font-weight: normal;
+}
+
+
+header  nav
+{
+	
+	
+	margin-top: 40px;
+}
+
+nav ul
+{
+	text-transform: uppercase;
+	list-style-type: none;
+}
+nav ul li 
+{
+	display: inline-block;
+	margin-right: 15px;
+}
+nav ul li a
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+nav ul li a:hover,nav ul li a.active
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+a .active
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+
+@media all and (max-width: 1024px)
+{
+	nav
+	{
+		float: left
+		width: auto;
+		text-align: left;
+	}
+	nav li
+	{
+		display: block;
+		padding: 4px;
+		
+	}
+	nav a
+	{
+		display: block;
+		font-size: 1.1em;
+	}
+	nav a:hover
+	{
+		border-bottom: 0;
+	}
+}
+
+/* end header*/
+
+
+
+
+/* start banner */
+
+.banner
+{
+	position: relative;
+	background-image: url('../img/sanfrancisco.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 300px;
+	border-radius: 4px;
+
+}
+
+
+.banner .text-banner
+{
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	background:rgba(44, 35, 35, 0.5);
+	height: 20%; 
+	width: 100%
+	
+}
+.banner .text-banner p
+{
+	margin-left: 7px;
+	margin-top: 20px;
+}
+
+.banner .banner-button
+{
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-radius: 6px;
+	background-color: #7D0C0E;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px 15px;
+	width: 120px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 8px;
+}
+
+.banner-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.banner-button span:after
+{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.banner-button:hover {
+	padding-right: 20px;
+	background-color: #AA0F12;
+	color: white;
+}
+
+.banner .banner-button:hover span:after
+{
+	opacity: 1;
+	right: 1.5;
+}
+/* End banner */
+
+/* Start section */
+
+section
+{
+	width: 100%;
+	margin: 25px 0;
+}
+article
+{
+	width: 70%;
+	float: left;
+}
+article  .image
+{
+	float: left;
+	margin-right: 10px;
+
+}
+article .logo-text-section
+{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+}
+article p
+{
+	margin-top: 5px;
+	text-align: justify;
+	font-size: .9em;
+}
+
+aside
+{
+	position: relative;
+	width: 25%;
+	float: right;
+	display: inline-block;
+	background-color: #6F6A63;
+	border:1px solid #555;
+	border-radius: 7px;
+	margin-left: 30px;
+}
+aside .flesh
+{
+	position: absolute;
+	top: 50%;
+	left: -4%;
+}
+aside h2
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+}
+aside .image
+{
+	margin: 10px 25%;
+	box-shadow: 0px 2px 5px #1c1a19;
+	margin-right: auto;
+	border:0.5px solid black;
+	border-radius: 3px;
+}
+section aside p
+{
+	
+	text-align: justify;
+	font-size: .9em;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: white;
+}
+aside ul
+{
+
+	list-style: none;
+	
+}
+aside ul li
+{
+	display: inline-block;
+	margin-right: 4px 4px;
+	padding:7px;
+	font-size: 25px;
+	color: #FFF;
+}
+aside ul li:hover
+{
+	color: black;
+}
+
+@media all and (max-width: 1024px)
+{
+	article
+	{
+		width: auto;
+	}
+	aside
+	{
+		position: relative;
+		width: auto;
+		width: auto;
+		display:block;
+		background-color: #6F6A63;
+		border:1px solid #555;
+		border-radius: 7px;
+		margin: 15px;
+	}
+	aside .image
+	{
+
+		box-shadow: 0px 2px 5px #1c1a19;
+		border:0.5px solid black;
+		border-radius: 3px;
+		float: right;
+		margin: 0 10px;
+		width: auto;	
+	}
+	aside p:last-child
+	{
+		text-align: center;
+	}
+	aside ul 
+	{
+
+		text-align: center; 
+	}
+	aside .flesh
+	{
+		display: none;
+	}
+}
+/* End section */
+
+
+/*Start footer*/
+
+footer 
+{
+	width: 100%;
+	background: url('../img/ico_top.png') no-repeat top center,url('../img/separateur.png') repeat-x top, url('../img/ombre.png') repeat-x top;
+	padding-top: 25px;
+	clear: both;
+}
+footer h2
+{
+	text-align: left; 
+}
+
+.mot
+{
+	float: left;
+	width: 33.3333%;
+}
+
+.photos
+{
+	display: inline-block;
+	float: left;
+	width: 33.3333%;
+}
+
+.photos img
+{
+	display: inline-block;
+	border:0.5px solid black;
+	border-radius: 2px;
+	margin: 5px 7px;
+}
+
+.liens
+{
+	display: inline-block;
+	width: 33.3333%;
+}
+.liens ul
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+	width: 48%;
+	list-style-image: url('../img/ico_liensexterne.png');
+	padding-left: 2px;
+	color: #801111;
+}
+
+@media all and(max-width: 1024px)
+{
+	footer
+	{
+		width: auto;
+	}
+}
+/*End footer*/
